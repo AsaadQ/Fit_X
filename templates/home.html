@@ -1,0 +1,82 @@
+ {% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boards</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static  'css/home.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static  'bootstrap/css/bootstrap.min.css'%}">
+
+
+</head>
+<body>
+
+
+ <div class="wrapper">
+    <div class="multi_color_border"></div>
+    <div class="top_nav">
+        <div class="left">
+          <div class="logo"><p><span>Coding</span>Market</p></div>
+          <div class="search_bar">
+          </div>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Whats Next</a></li>
+          <li><a href="#">SignUp</a></li>
+          <li><a href="#">LogIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom_nav">
+      <ul>
+        <li><a href="#">Hjemme</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">MatPlan</a></li>
+        <li><a href="#">TrenningsPlan</a></li>
+        <li><a href="#">Butikk</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Artikler</a></li>
+      </ul>
+  </div>
+
+
+</div>
+
+
+    <h1>Boards</h1>
+     <table border="1">
+        <thead>
+            <tr>
+                <th>Board</th>
+                <th>Posts</th>
+                <th>Topic</th>
+                <th>Las Post</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for board in boards %}
+                <tr>
+                    <td>{{ board.name }}<td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+
+
+    <script src="{% static 'bootstrap/js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+
+</body>
+</html>

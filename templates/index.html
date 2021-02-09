@@ -58,8 +58,7 @@
 	<!-- Modernizr JS -->
 	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
 	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="{% static 'js/respond.min.js' %}"></script>
+	<!--[if lt IE 9] <script src="{% static 'js/respond.min.js' %}"></script>
 	<![endif]-->
 
 	</head>
@@ -163,7 +162,7 @@
 							<div class="schedule-content active" data-day="sunday">
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-dumbell.svg" alt="Cycling">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
 										<small>06AM-7AM</small>
 										<h3>Body Building</h3>
 										<span>John Doe</span>
@@ -171,7 +170,7 @@
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-yoga.svg" alt="">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
 										<small>06AM-7AM</small>
 										<h3>Yoga Programs</h3>
 										<span>James Smith</span>
@@ -179,7 +178,7 @@
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-cycling.svg" alt="">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
 										<small>06AM-7AM</small>
 										<h3>Cycling Program</h3>
 										<span>Rita Doe</span>
@@ -187,7 +186,7 @@
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-boxing.svg" alt="Cycling">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
 										<small>06AM-7AM</small>
 										<h3>Boxing Fitness</h3>
 										<span>John Dose</span>
@@ -199,7 +198,7 @@
 							<div class="schedule-content" data-day="monday">
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-yoga.svg" alt="">
+										<img src="{% static 'images/fit-yoga.svg' %}" alt="">
 										<small>06AM-7AM</small>
 										<h3>Yoga Programs</h3>
 										<span>James Smith</span>
@@ -207,7 +206,7 @@
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-dumbell.svg" alt="Cycling">
+										<img src= "{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
 										<small>06AM-7AM</small>
 										<h3>Body Building</h3>
 										<span>John Doe</span>
@@ -215,7 +214,7 @@
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-boxing.svg" alt="Cycling">
+										<img src="{% static 'images/fit-boxing.svg' %}" alt="Cycling">
 										<small>06AM-7AM</small>
 										<h3>Boxing Fitness</h3>
 										<span>John Dose</span>
@@ -223,7 +222,7 @@
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-cycling.svg" alt="">
+										<img src="{% static 'images/fit-cycling.svg' %}" alt="">
 										<small>06AM-7AM</small>
 										<h3>Cycling Program</h3>
 										<span>Rita Doe</span>
@@ -236,7 +235,7 @@
 							<div class="schedule-content" data-day="tuesday">
 								<div class="col-md-3 col-sm-6">
 									<div class="program program-schedule">
-										<img src="images/fit-dumbell.svg" alt="Cycling">
+										<img src="{% static 'images/fit-dumbell.svg' %}" alt="Cycling">
 										<small>06AM-7AM</small>
 										<h3>Body Building</h3>
 										<span>John Doe</span>
@@ -419,14 +418,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="fh5co-parallax" style="background-image: url(images/home-image-3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/home-image-3.jpg' %});" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 						<div class="fh5co-intro fh5co-table-cell animate-box">
 							<h1 class="text-center">Commit To Be Fit</h1>
-							<p>Lagt Av Studenter  I USN I Bø </a></p>
+							<p>Lagt Av Studenter  I USN I Bø </p>
 						</div>
 					</div>
 				</div>
@@ -506,7 +505,7 @@
 				</div>
 				<div class="row text-center">
 					<div class="col-md-4 col-sm-6">
-						<div class="team-section-grid animate-box" style="background-image: url(images/trainer-1.jpg);">
+						<div class="team-section-grid animate-box" style="background-image: url( {% static 'images/trainer-1.jpg' %});">
 							<div class="overlay-section">
 								<div class="desc">
 									<h3>Asaad Qudseih</h3>
@@ -522,7 +521,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div class="team-section-grid animate-box" style="background-image: url(images/trainer-2.jpg);">
+						<div class="team-section-grid animate-box" style="background-image: url( {% static 'images/trainer-2.jpg' %}images/trainer-2.jpg);">
 							<div class="overlay-section">
 								<div class="desc">
 									<h3>Mian Ahad Rashid</h3>
@@ -538,7 +537,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div class="team-section-grid animate-box" style="background-image: url(images/trainer-3.jpg);">
+						<div class="team-section-grid animate-box" style="background-image: url( {% static 'images/trainer-3.jpg' %}images/trainer-3.jpg);">
 							<div class="overlay-section">
 								<div class="desc">
 									<h3>Bachir</h3>
@@ -554,7 +553,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
-						<div class="team-section-grid animate-box" style="background-image: url(images/trainer-4.jpg);">
+						<div class="team-section-grid animate-box" style="background-image: url({% static 'images/trainer-4.jpg' %});">
 							<div class="overlay-section">
 								<div class="desc">
 									<h3>Anas</h3>
@@ -572,7 +571,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="fh5co-parallax" style="background-image: url(images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
+		<div class="fh5co-parallax" style="background-image: url({% static 'images/home-image-2.jpg' %});" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -604,7 +603,7 @@
 									<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
 								</div>
 								<div class="desc">
-									<h3><a href=""#>Starting new session of body building this summer</a></h3>
+									<h3><a href="#">Starting new session of body building this summer</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains</p>
@@ -618,7 +617,7 @@
 									<a href="#"><img class="img-responsive" src="images/blog-1.jpg" alt=""></a>
 								</div>
 								<div class="desc">
-									<h3><a href=""#>Starting new session of body building this summer</a></h3>
+									<h3><a href="#">Starting new session of body building this summer</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains</p>
@@ -639,7 +638,7 @@
 									<p><span class="date">14</span><span>June</span><span>2016</span></p>
 								</div>
 								<div class="desc desc2">
-									<h3><a href=""#>Starting new session of body building this summer</a></h3>
+									<h3><a href="#">Starting new session of body building this summer</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -653,7 +652,7 @@
 									<p><span class="date">13</span><span>June</span><span>2016</span></p>
 								</div>
 								<div class="desc desc2">
-									<h3><a href=""#>Starting new session of body building this summer</a></h3>
+									<h3> <a href="#">Starting new session of body building this summer</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -731,21 +730,21 @@
 	<!-- jQuery -->
 
 
-	<script src="js/jquery.min.js"></script>
+	<script src="{% static 'js/jquery.min.js' %}"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="{% static 'js/jquery.easing1.3.js' %}j"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
 	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
 	<!-- Superfish -->
-	<script src="js/hoverIntent.js"></script>
-	<script src="js/superfish.js"></script>
+	<script src="{% static 'js/hoverIntent.js' %}"></script>
+	<script src="{% static 'js/superfish.js' %}"></script>
 
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+	<script src="{% static 'js/main.js' %}"></script>
 
 	</body>
 </html>
